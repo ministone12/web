@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="dct.css">
+
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
                 <ul>
                     <li><a href="#">회원가입</a>
                     <dl>
-                        <dt><a href="#">회원가입</a></dt>
+                        <dt><a href="#" class="join">회원가입</a></dt>
                         <dt><a  href="#">공지사항</a></dt>
                         <dt><a href="#">회원해지</a></dt>
                     </dl>
@@ -56,6 +57,10 @@
         <div class="sns"></div>
     </aside>
     <footer></footer>
-   
+    <script>
+        document.querySelector('.menu .join').onclick=function(){
+            location.href="회원가입.html";
+        }
+    </script>
 </body>
 </html>
