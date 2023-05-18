@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/jquery-3.6.4.js"></script>
+    <script src="./script/jquery.bxslider.js"></script>
+    <!-- <script src="./script/fullpage.min.js"></script> -->
+    <script src="./script/index.js"defer></script>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="./css/fullpage.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<header>
+            <ul class="logo">
+                <img src="./image/logo.png" alt="이미지">
+                <img src="./image/logo_typ.png" alt="타이핑로고"></ul>
+            <ul class="login">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">Language</a></li>
+            </ul>        
+</header>      
+        
+<main>
+        <div class="nav">
+            <div class="asia"><a href="#">아시아</a>
+                <div class="asia_nav">
+                    <ul>
+                    <li><a href="">대만/중국</a>
+                        <dl>
+                            <dt><a href="">대만</a></dt>
+                            <dd><a href="">북경</a></dd>
+                            <dd><a href="">상해</a></dd>
+                            <dd><a href="">단둥</a></dd> 
+                            <dd><a href="">사천</a></dd>
+                            <dd><a href="">청도</a></dd> 
+                            <dd><a href="">홍콩/마카오</a></dd>                 
+                        </dl>
+                    </li>  
+                    <li><a href="">캄보디아/말레이시아/라오스/인도/네팔</a>
+                        <dl>
+                            <dt><a href="">앙코르왓</a></dt>
+                            <dd><a href="">코타기나발루</a></dd>
+                            <dd><a href="">쿠알라룸푸르</a></dd>
+                            <dd><a href="">방비엔</a></dd> 
+                            <dd><a href="">루아프라방</a></dd>
+                            <dd><a href="">인도</a></dd> 
+                            <dd><a href="">네팔</a></dd>                 
+                        </dl>
+                    </li>
+                    <li><a href="">베트남</a>
+                        <dl>
+                            <dt><a href="">다낭</a></dt>
+                            <dd><a href="">나트랑</a></dd>
+                            <dd><a href="">푸꾸옥</a></dd>
+                            <dd><a href="">하롱베이</a></dd> 
+                            <dd><a href="">하노이</a></dd>
+                            <dd><a href="">호치민</a></dd> 
+                            <dd><a href="">달랏</a></dd>                 
+                        </dl>
+                       
+                    </li>
+                    <li><a href="">필리핀</a>
+                        <dl>
+                            <dt><a href="">보라카이</a></dt>
+                            <dd><a href="">세부</a></dd>
+                            <dd><a href="">보홀</a></dd>
+                            <dd><a href="">마닐라</a></dd>                            
+                        </dl>
+                    </li>
+                    <li><a href="">몰디브/발리/인도</a>
+                        <dl>
+                            <dt><a href="">몰디브</a></dt>
+                            <dd><a href="">발리</a></dd>
+                            <dd><a href="">인도</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">태국/싱가포르</a>
+                        <dl>
+                            <dt><a href="">방콕</a></dt>
+                            <dd><a href="">파타야</a></dd>
+                            <dd><a href="">푸켓/끄라비</a></dd>
+                            <dd><a href="">치앙마이</a></dd>
+                            <dd><a href="">코사무이</a></dd>
+                            <dd><a href="">싱가포르</a></dd>
+                        </dl>
+                    </li></ul>
+                </div>          
+            </div>                  
+            <div class="usa"><a href="#">미국/캐나다</a>
+                <div class="usa_nav">
+                    <ul>
+                    <li><a href="">미국 동부</a> 
+                        <dl>
+                            <dt><a href="">뉴욕</a></dt>
+                            <dd><a href="">워싱턴DC</a></dd>
+                            <dd><a href="">보스톤</a></dd>
+                            <dd><a href="">필라델피아</a></dd>
+                        </dl>
+                    </li>  
+                    <li><a href="">미국 서부</a>
+                        <dl>
+                            <dt><a href="">로스엔젤레스</a></dt>
+                            <dd><a href="">샌프란시스코</a></dd>
+                            <dd><a href="">라스베이거스</a></dd>
+                            <dd><a href="">시애틀</a></dd>
+                            <dd><a href="">그랜드케년</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">하와이</a>
+                        <dl>
+                            <dt><a href="">호롤룰루</a></dt>
+                            <dd><a href="">마우이</a></dd>
+                            <dd><a href="">빅아일랜드</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">알래스카</a></li>
+                    <li><a href="">캐나다 동부</a>
+                        <dl>
+                            <dt><a href="">밴쿠버</a></dt>
+                            <dd><a href="">밴프</a></dd>
+                            <dd><a href="">나이아가라</a></dd>
+                            <dd><a href="">토론토</a></dd>
+                            <dd><a href="">퀘백</a></dd>
+                        </dl>
+                    
+                    </li>
+                    <li><a href="">중남미</a>
+                        <dl>
+                            <dt><a href="">멕시코</a></dt>
+                            <dd><a href="">브라질</a></dd>
+                            <dd><a href="">칠레</a></dd>
+                            <dd><a href="">아르헨티나</a></dd>
+                        </dl>
+                    </li></ul>
+                </div>
+            </div>
+            <div class="eur"><a href="#">유럽</a>
+                <div class="eur_nav">
+                    <ul>
+                    <li><a href="">서유럽</a>
+                        <dl>
+                            <dt><a href="">영국</a></dt>
+                            <dd><a href="">프랑스</a></dd>
+                            <dd><a href="">독일</a></dd>
+                            <dd><a href="">네델란드</a></dd>
+                        </dl>
+                    </li>  
+                    <li><a href="">동유럽</a>
+                        <dl>
+                            <dt><a href="">오스트리아</a></dt>
+                            <dd><a href="">체코</a></dd>
+                            <dd><a href="">헝가리</a></dd>
+                            <dd><a href="">스위스</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">남유럽</a>
+                        <dl>
+                            <dt><a href="">이탈리아</a></dt>
+                            <dd><a href="">스페인</a></dd>
+                            <dd><a href="">포르투갈</a></dd>
+                            <dd><a href="">모로코</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">북유럽</a>
+                        <dl>
+                            <dt><a href="">노르웨이</a></dt>
+                            <dd><a href="">핀란드</a></dd>
+                            <dd><a href="">덴마크</a></dd>
+                            <dd><a href="">스웨덴</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">지중해</a>
+                        <dl>
+                            <dt><a href="">그리스</a></dt>
+                            <dd><a href="">터키</a></dd>
+                            <dd><a href="">크로아티아</a></dd>
+                            <dd><a href="">슬로베니아</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="#">아프리카</a>
+                        <dl>
+                           
+                            <dt><a href="">이집트</a> </dt>  
+                            <dd><a href="">탄자니아</a></dd>
+                            <dd><a href="">케냐</a></dd>
+                            <dd><a href="">남아공</a></dd>
+                        </dl>
+                    </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="pac"><a href="#">호주/태평양</a>
+                <div class="pac_nav">
+                    <ul>
+                    <li><a href="">호주</a>
+                    <dl>
+                        <dt><a href="">시드니</a></dt>
+                        <dd><a href="">멜버른</a></dd>
+                        <dd><a href="">골드코스트</a></dd>
+                        <dd><a href="">브리즈번</a></dd>
+                    </dl>
+                    </li>  
+                    <li><a href="">뉴질랜드</a>
+                        <dl>
+                            <dt><a href="">오클랜드</a></dt>
+                            <dd><a href="">로토루아</a></dd>
+                            <dd><a href="">크라이스트처치</a></dd>
+                            <dd><a href="">퀸즈타운</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">괌</a></li>
+                    <li><a href="">사이판</a></li>
+                    <li><a href="">이 섬을 아시나요?</a>
+                        <dl>
+                            <dt><a href="">피지</a></dt>
+                            <dd><a href="">사모아</a></dd>
+                            <dd><a href="">통가</a></dd>
+                        </dl>
+                    </li></ul>
+                </div>
+            </div>
+            <div class="mid"><a href="#">일본</a>
+                <div class="mid_nav">
+                    <ul>
+                    <li><a href="">관동</a>
+                        <dl>
+                            <dt><a href="">도쿄</a></dt>
+                            <dd><a href="">시즈오카</a></dd>
+                            <dd><a href="">하코네(후지산)</a></dd>
+                        </dl>        
+                    </li>  
+                    <li><a href="">관서</a>
+                        <dl>
+                            <dt><a href="">오사카</a></dt>
+                            <dd><a href="">교토</a></dd>
+                            <dd><a href="">고베</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">규슈</a>
+                        <dl>
+                            <dt><a href="">후쿠오카</a></dt>
+                            <dd><a href="">벳부/유후인</a></dd>
+                            <dd><a href="">나가사키</a></dd>
+                        </dl></li>
+                    <li><a href="">홋카이도</a>
+                        <dl>
+                            <dt><a href="">삿포로</a></dt>
+                            <dd><a href="">후리노/비에이</a></dd>
+                            <dd><a href="">아사히카와</a></dd>
+                        </dl></li>
+                    <li><a href="">중부</a>
+                        <dl>
+                            <dt><a href="">도야마/알펜루트</a></dt>
+                            <dd><a href="">나고야</a></dd>
+                            <dd><a href="">다카야마</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">오키나와/대마도</a>
+                        <dl>
+                            <dt><a href="">오키나와</a></dt>
+                            <dd><a href="">대마도</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="myd"><a href="#">나의 꿈</a>
+                <div class="myd_nav">
+                <ul>
+                    <li><a href="">목적지</a>
+                        <dl>
+                            <dt><a href="">영순위</a></dt>
+                            <dd><a href="">1순위</a></dd>
+                            <dd><a href="">이번 여름</a></dd>
+                            <dd><a href="">이번 겨울</a></dd>
+                        </dl>
+                    </li>  
+                    <li><a href="">현재위치</a>
+                        <dl>
+                            <dt><a href="">적립액</a></dt>
+                            <dd><a href="">현지어 습득</a></dd>
+                            <dd><a href="">체력</a></dd>
+                            <dd><a href="">필라델피아</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">추가사항</a>
+                        <dl>
+                            <dt><a href="">구입물품</a></dt>
+                            <dd><a href="">구입서적</a></dd>
+                        </dl>
+                    </li>
+                    <li><a href="">이루어진 꿈</a>
+                        <dl>
+                            <dt><a href="">다녀온 곳</a></dt>
+                            <dd><a href="">경비결산</a></dd>
+                            <dd><a href="">남은 사진</a></dd>
+                            <dd><a href="">맺은 인연</a></dd>
+                        </dl>
+                    </li>
+                </div>
+            </div>
+                       
+        </div>
+            <ul class="bx">
+                <li><img src="./image/bx1_mdiv.png" alt="#" class="몰디브"></li>
+                <li><img src="./image/bx2_rio.png" alt="#"></li>
+                <li><img src="./image/bx3_bar.png" alt="#"></li>
+                <li><img src="./image/bx4_aus.png" alt="#"></li>
+                <li><img src="./image/bx5_atr.png" alt="#"></li>
+            </ul>
+                <p class="wd1">what's <br> your dreams?</p>
+                <P class="wd2">where's <br> your dreams?</P>
+          
+          
+</main>   
+<div class="section1">
+    <h1 class="sec1_title">괜찮아~ 수고했어^^ 잠시 쉬어볼까?</h1>
+    <div>
+        <ul>
+        <img src="./image/drink-g00125c653_1920.jpg" alt="">
+        </ul>
+        <ul>
+            <strong>보이는 빨강은 뒤에 있는 파랑과 같이 있어야 한다</strong>
+            <p>함께 있으면 더 잘 어울린다</p>
+            <p># 갈망 : 내가 원하는 것은 어떤 것인지 모를 때</p>
+            <p># 누가 마실래?</p>            
+            <button>마실 곳</button>
+        </ul>    
+    </div>
+    <div>
+        <ul>
+        <img src="./image/blonde-g8f5fa722a_1920.jpg" alt="">
+        </ul>
+        <ul>
+            <strong>가득 차 있는 것 같지만 오히려 더 비어있다.</strong>
+            <p>아무 것도 없는 곳에서 나를 찾는다</p>
+            <p># 진실 : 채우려고 하지만 더 비어져만 갈 때</p>
+            <p># 누가 비울래?</p>            
+            <button>비울 곳</button>
+        </ul>    
+    </div>
+    <div>
+        <ul>
+        <img src="./image/beach-gf4c474c10_1920.jpg" alt="">
+        </ul>
+        <ul>
+            <strong>때론 사람들이 이상하게 바라보기도 한다.</strong>
+            <p>말로 하는 것 말고 한 번 해 본다</p>
+            <p># 자유 : 틀에 박혀 있는 것을 떨치려고 할 때</p>
+            <p># 누가 뛰어볼래?</p>            
+            <button>뛸 곳</button>
+        </ul>    
+    </div>
+    <div>
+        <ul>
+        <img src="./image/hot-air-balloons-g3305f72db_1920.jpg" alt="">
+        </ul>
+        <ul>
+            <strong>딛고 있는 곳에서 떨어지는 것은 불안하다.</strong>
+            <p>조금 더 위에서 보면 다르게 보인다</p>
+            <p># 이해 : 내가 있는 곳이 힘들어만 보일 때</p>
+            <p># 누가 도전볼래?</p>
+            <button>도전할 곳</button>          
+        </ul>    
+    </div>
+</div>
+
+<div class="section3">
+    <div class="recomd">
+        <div class="root">
+            <div class="root_img">
+                <div class="moc">             
+                <ul class="rec"> 
+                    <li><img src="./image/recomd1.png" alt=""></li>
+                    <li><img src="./image/recmd02.png" alt=""></li>
+                    <li><img src="./image/0518sec_rec_00.png" alt=""></li>
+                    <li><img src="./image/0518sec_rec_40.png" alt=""></li>
+                </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section2">
+    <div class="sec2_title">
+        <ul>
+            <img src="./image/adealga.png" alt="" class="sublogo">
+        </ul>
+        <ul>
+            <P>a : 알파벳 첫 문자. Ace, expert, first-class 등 최고나 으뜸을 뜻하는 글자</P>   
+            <p>딜 : 영어 deal 의 한국어발음. 거래 등을 뜻함 </p>
+            <p>가 : 價 값을 뜻하는 한자어와 "가다"라는 동사의 의미</p>
+            
+        </ul>
+        <p class="adeal">최고의 서비스를 표방하는 여행사로서 착한 비용으로 가고 싶은 곳, 꿈꾸는 곳으로    인도한다는 의미를 함축</p>
+    </div>
+    <div class="adeal_pri">
+        <div class="pri_nav">
+            <div>  
+                <ul class="box">            
+                <li><img src="./image/1beach-6510275.jpg.png" alt="">
+                    <a href=""><p>저녁노을속에</p></a>
+                </li>
+                <li><img src="./image/2beach-g5ce07f360_1920.jpg.png" alt="">
+                    <a href=""><p>1과 1/2의 일</p></a>
+                </li>
+                <li><img src="./image/3beach-g940ad3e6e_1920.jpg" alt="">
+                    <a href=""><p>야자나무 아래에</p></a>
+                </li>
+                <li><img src="./image/4beautiful-nature-g3dbf1e154_1920.jpg.png" alt="">
+                
+                    <a href=""><p>투명한 바다속을</p></a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="detail">
+            <ul>
+                <li><a href=""><img src="./image/1beach-6510275.jpg.png" alt=""></a></li>
+                <li><a href=""><img src="./image/2beach-g5ce07f360_1920.jpg.png" alt=""></a></li>
+                <li><a href=""><img src="./image/3beach-g940ad3e6e_1920.jpg" alt=""></a></li>
+                <li><a href=""><img src="./image/4beautiful-nature-g3dbf1e154_1920.jpg.png" alt=""></a></li>
+            </ul>
+            
+        </div>    
+    </div>
+
+</div>
+
+<footer>
+    <ul><img src="./image/logo_typ.png" alt=""></ul>
+    <ul>
+        <p>@copyright only Dreams come true</p>
+    </ul>
+    <ul>
+        <p>경기도 남양주 지금동</p>
+    </ul>
+</footer>       
+</body>
+</html>

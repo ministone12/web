@@ -1,0 +1,586 @@
+*{margin:0; padding:0}
+ul{list-style: none;}
+li{text-decoration: none;}
+a:link,a:visited{text-decoration: none;}
+body,html{
+    width: 100%;
+    min-width: 1000px;
+}
+header{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: first baseline; 
+    background-color: white;
+}
+.logo{
+    width:39% ; 
+    height: 100px;  
+    display: flex;
+}
+.logo img{
+    width: 50%;
+    height: 100%;
+}
+.login{
+     width:40% ; 
+     height: 50px; 
+     display: flex;
+     flex-wrap: wrap;
+     position: absolute;
+     right:0;
+     top:50px;
+}
+.login li{
+    width: 30%;
+    height: 50px;
+    background-color: rgba(153, 153, 226,0.4);
+}
+
+header a{
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5em;
+}  
+
+main{
+    width: 100%;
+    height: 700px;
+    padding-top: 3px;
+    position: relative; 
+    /* overflow: hidden; */
+}
+main .bx{
+    width: 500%;
+    height: 700px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+main .bx li{
+    width: 20%;
+    height: 100%;
+    transition: all 0.4s;
+} 
+main .bx img{
+    width: 100%;
+    height: 100%;
+}
+main p{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    z-index: 5;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: 50px;
+}
+main .wd1{width: 30%; height: 10%;top:20%; left:15%;}
+main .wd2{width: 30%; height: 10%;top:70%; right:5%;}
+
+
+main .nav{
+    width: 100%;
+    height: 500px;    
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+main .nav div{
+    display: inline;
+    width:5%;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+}
+main .nav a{
+    color:  white;
+    font-size: 1.1em;
+}
+.nav .asia_nav{
+    width: 1800%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightcoral;
+    position: absolute;        
+    left: 0;
+    z-index: 4;    
+}
+.nav .asia_nav ul,
+.nav .usa_nav ul,
+.nav .eur_nav ul,
+.nav .pac_nav ul,
+.nav .mid_nav ul,
+.nav .myd_nav ul{
+    width: 100%;
+    display: flex;
+   
+}
+.nav .asia_nav li{
+    width: 16.66%;
+    position: relative;
+    text-align: center;
+} 
+.nav .asia_nav a{
+    color: white;
+    line-height: 50px;
+}
+.nav .asia_nav li a::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 9%;
+    left: 33%;
+    z-index: 4;  
+}
+.nav .asia:hover .asia_nav{
+    height: 500px;
+}
+
+.nav .usa_nav{
+    width: 1800%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightblue;
+    position: absolute;       
+    left: -334%;
+    top: 50%;
+    z-index: 4;
+    
+}
+.nav .usa_nav li{
+    width: 16.66%;
+    position: relative;
+
+} 
+.nav .usa_nav li a::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 9%;
+    left: 33%;
+    z-index: 4; 
+}
+.nav .usa:hover .usa_nav{
+    height: 500px;
+}
+
+.nav .eur_nav{
+    width: 1800%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightsalmon;
+    position: absolute;       
+    left: -665%;
+    z-index: 4;
+    
+}
+.nav .eur_nav li{
+    width: 16.66%;
+    position: relative;
+
+} 
+.nav .eur_nav li a::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 8%;
+    left: 34%;
+    z-index: 4;
+}
+.nav .eur:hover .eur_nav{
+    height: 500px;
+}
+
+.nav .pac_nav{
+    width: 1800%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightseagreen;
+    position: absolute;       
+    left: -999%;
+    top:50%;
+    z-index: 4;
+    
+}
+.nav .pac_nav li{
+    width: 16.66%;
+    position: relative;
+
+} 
+.nav .pac_nav li a::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 8%;
+    left: 34%;
+    z-index:  4;
+}
+.nav .pac:hover .pac_nav{
+    height: 500px;
+}
+
+.nav .mid_nav{
+    width: 1800%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightgreen;
+    position: absolute;       
+    left: -1334%;
+    z-index: 4;
+    
+}
+.nav .mid_nav li{
+    width: 16.66%;
+    position: relative;
+
+} 
+.nav .mid_nav li a::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    z-index:  4;
+}
+.nav .mid:hover .mid_nav{
+    height: 500px;
+}
+
+.nav .myd_nav{
+    width: 1800%;
+    height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightslategray;
+    position: absolute;       
+    left: -1666%;
+    z-index: 4;
+    
+}
+.nav .myd_nav li{
+    width: 16.66%;
+    position: relative;
+
+} 
+.nav .myd_nav li a::before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    z-index: 4;
+}
+.nav .myd:hover .myd_nav{
+    height: 500px;
+}
+
+.section1{
+    width: 80%;
+    background-color: white;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; padding-top: 10%;
+    position: relative;
+}
+.section1 .sec1_title{
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    margin-bottom: 5%;
+}
+.section1 div{
+    width: 23%;
+    height: 60%;  
+    padding-top: 3%;  
+}
+.section1 img{
+    width: 100%;
+    height: 100%;
+}
+.section1 ul{
+    width: 100%;
+    height: 60%;
+    margin-top: 10%;
+    position: relative;
+    
+}   
+.section1 strong, .section1 p{
+    font-size: 1.1em;
+    line-height: 200%;
+}
+.section1 button{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    right: 2%;
+    font-size: 1.1em;
+}
+
+.section2{
+    width: 100%;
+    height: 1000px;
+    background-color: lightblue;    
+}
+.section2 .sec2_title{
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 3%;
+}
+.section2 .sec2_title ul:nth-child(1){
+    width: 30%;
+    text-align: right;
+}
+.section2 .sec2_title ul:nth-child(2){
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.section2 .sublogo{
+    width: 200px;
+    height: 100px;
+}
+.section2 .sec2_title p{
+    font-size: 1.1em;
+    text-align: left;   
+}
+.section2 p{
+    margin: auto;   
+}    
+.section2 .adeal{
+    margin-top: 3%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+
+
+.section2 .adeal_pri{
+    width: 70%;
+    height: 50%;
+    margin:5% auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section2 .adeal_pri .pri_nav{
+    width: 50%;
+    height: 100%;        
+    /* background: url(../image/trees-g675bab40e_1920.jpg)top/cover;
+    border-radius: 5px 5px 5px 5px ; */
+}
+.adeal_pri .pri_nav div{
+    width: 100%;
+    position: relative;
+   
+}
+.box{    
+    width: 100%;
+    height: 2400px;
+    display: flex;
+    flex-direction: column;
+}
+.box li{
+    width: 100%;
+    height: 25%;
+    border:3px solid white;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+}
+.box img{
+    width: 100%;
+    height:100%;
+    box-sizing: border-box;
+    
+} 
+.box li a{
+    color: white;
+    font-size: 2em;
+    text-align: right;
+    position: absolute;
+    bottom: 5%;
+}
+
+
+
+
+
+
+.section2 .adeal_pri .detail{
+    width: 50%;
+    height: 100%;        
+}
+.detail ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.detail li{
+    width:50%;
+    height: 50%;
+    text-align: center;
+    position: absolute;   
+}
+.detail li:nth-child(1){top:0; left: 5%;}
+.detail li:nth-child(2){top:0; left: 50%;}
+.detail li:nth-child(3){top:50%; left: 25%;}
+.detail li:nth-child(4){top:50%; left: 75%}
+
+.detail li img{
+    width: 70%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid white;  
+    box-sizing: border-box;  
+}
+.section3{
+    width: 100%;
+    height: 1000px;
+    background: url(../image/recomd00.png)top/cover;    
+}
+.section3 .recomd{
+    width: 100%;
+    height: 100%;    
+}
+.recomd .root{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    /* padding-top: 8%; */
+}
+.recomd .root_img{
+    width: 70%;
+    height: 1000px;
+    margin: auto; 
+   position: relative;
+   /* display: flex;
+   flex-wrap: wrap; */
+}
+.root_img .moc{
+    position: absolute;
+    z-index: 10;
+    width: 439px;
+    height: 899px;
+    left: -116%;
+    top: 57%;
+    transform: translate(-50%,-50%);
+    background: url(../image/phone.png)no-repeat;
+    background-size: 82%;
+}
+.root_img .moc img{
+    filter: blur(10px 10px 10px black);
+}
+.recomd .root_img img{
+    width: 90%;
+    height: 82%;
+}   
+
+.root_img ul{
+    width: 520%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: -21%;
+    top: -11%;
+    z-index: 2;
+}
+
+.root_img li{
+   flex: 1 0;
+   margin-left: 1%;
+   border-radius: 15px 15px 15px 15px;
+}
+.root_img li:nth-child(1){width: 100%; height: 120%; 
+  ;
+}
+.root_img li:nth-child(2){width: 100%; height: 120%;  }
+.root_img li:nth-child(3){width: 100%; height: 120%; }
+.root_img li:nth-child(4){width: 100%; height: 120%;  }
+
+.section1, .section2, .section3{
+    width: 100%;
+    height: 1000px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer ul{
+    width: 33%;
+    text-align: center;
+    line-height: 10%;
+}
+footer ul img{
+    width: 200px;
+    height: 100px;
+}
+footer p{
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+.section2 .pri_nav .bx-default-pager{
+    display: flex;
+    bottom: -20px;
+    transform: translateX(-50%);
+    left: 60%;
+}
+
+.section2 .pri_nav .bx-pager-item{
+    height: 50px;
+    text-align: center;
+    flex: 1 0;
+}
+.section2 .bx-wrapper .bx-controls-direction a{
+    top: -205px;
+
+}
